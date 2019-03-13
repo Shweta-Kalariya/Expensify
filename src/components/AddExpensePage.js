@@ -2,7 +2,21 @@ import React from "react";
 
 const AddExpensePage = () => (
   <div>
-    <p>This is Add expense page!</p>
+    <div>
+      <input type="text" placeholder="Description" required />
+    </div>
+    <div>
+      <input type="number" placeholder="date" required />
+    </div>
+    <div>
+      <input type="number" placeholder="amount" required />
+    </div>
+    <div>
+      <input type="text" placeholder="Note(Optional)" />
+    </div>
+    <div>
+      <button>Submit</button>
+    </div>
   </div>
 );
 
