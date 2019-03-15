@@ -29,10 +29,10 @@ const expenseTwo = store.dispatch(
   })
 );
 
-store.dispatch(setTextFilter("Water"));
-setTimeout(() => {
-  store.dispatch(setTextFilter("Bill"));
-}, 3);
+// store.dispatch(setTextFilter("Water"));
+// setTimeout(() => {
+//   store.dispatch(setTextFilter("Bill"));
+// }, 3);
 const st = store.getState();
 console.log(getVisibleExpenses(st.expenses, st.filters));
 
