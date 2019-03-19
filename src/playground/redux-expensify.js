@@ -60,7 +60,7 @@ const setStartDate = (startDate = undefined) => ({
 });
 
 const setEndDate = (endDate = undefined) => ({ type: "SET_END_DATE", endDate });
-
+//Reducer
 const expenseReducerDefaultState = [];
 const expenseReducer = (state = expenseReducerDefaultState, action) => {
   switch (action.type) {
@@ -81,6 +81,7 @@ const expenseReducer = (state = expenseReducerDefaultState, action) => {
   }
 };
 
+//Get Visible Expense
 const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
   return expenses
     .filter(expense => {
